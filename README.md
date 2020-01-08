@@ -95,7 +95,7 @@ onPressed: () async {
 	}
 	port = await devices[0].create();
 
-	bool openResult = await _port.open();
+	bool openResult = await port.open();
 	if ( !openResult ) {
 		print("Failed to open");
 		return;
